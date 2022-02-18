@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "properties": {
+    "name": {
+      "description": "The name of the new react component.",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the react component?"
+    },
+    "directory": {
+      "description": "The name of directory where the react component will be created.",
+      "type": "string",
+      "alias": "d",
+      "default": "components"
+    }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "generators": {
+      "description": "A blank schematic.",
+      "factory": "./generators/index#generators"
+    },
+    "react-component": {
+      "description": "Create a React component.",
+      "factory": "./react-component/index#reactComponent",
+      "schema": "./react-component/schema.json"
+    }
+  }
+}
